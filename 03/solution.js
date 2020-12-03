@@ -89,13 +89,8 @@ solve2 = () => {
     var numberOfTrees = terrainTypes.filter((item) => item === '#').length;
     treesPerSlope.push(numberOfTrees);
   });
-  const totalTrees = treesPerSlope.reduce(
-    (product, trees) => product * trees,
-    1
-  );
-  console.log(
-    totalTrees + ' is the number if multiplying trees from all slopes.'
-  );
+  const totalTrees = treesPerSlope.reduce((product, trees) => product * trees, 1);
+  console.log(totalTrees + ' is the number if multiplying trees from all slopes.');
 };
 
 solve1();
